@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <p class="page-title">TODO<span class="text-light">List</span></p>
+
+    <div class="list-card">
+      <div class="input-wrapper">
+        <input type="checkbox">
+        <p>Keren</p>
+      </div>
+      <i class="btn-delete ti-trash"></i>
+    </div>
+
+    <hr>
+
+    <p class="font-weight-medium">Task</p>
+    <input type="text">
+    <p class="font-weight-medium">Name</p>
+    <input type="text">
+    <center>
+      <button type="button" class="btn-submit">Add to list</button>
+    </center>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
+  name: 'App'
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="css">
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;550;700&display=swap');
+
+  @import url('https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css');
 </style>
